@@ -28,6 +28,9 @@
             </div>
             <!-- div to add content modules -->            
             <div class="main_content_module">
+            <div class="top-reg">
+                    Dashboard > Registration > <mark class="reg"> Student </mark> 
+            </div> 
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-5">

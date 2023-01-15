@@ -93,3 +93,13 @@ p{
     width: 100px;
     border-radius: 5px;
  } */
+
+ mark.reg{
+  color: red;
+  background: rgb(255, 255, 255);
+}
+
+.top-reg{
+  font-size: 18px;
+  margin-left: 25px;
+}
