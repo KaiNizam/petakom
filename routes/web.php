@@ -23,9 +23,6 @@ Route::get('/homepage', function(){
 Route::get('/Manage Registration/RegNewMem', function(){
     return view('Manage Registration/RegNewMem');
 });
-
-<<<<<<< Updated upstream
-=======
 Route::get('/Manage Registration/Lecturer/addLecturerProfile', function () {
     return view('Manage Registration/Lecturer/addLecturerProfile');
 });
@@ -52,7 +49,6 @@ Route::get('/Manage Registration/Student/SearchStudent', function () { //route f
 // end manage register
 
 // start route manage committe Election
->>>>>>> Stashed changes
 Route::get('/Manage Committee Election/Student/StudCandidateListPage', function () {
     return view('Manage Committee Election/Student/StudCandidateListPage');
 });
@@ -73,8 +69,6 @@ Route::get('/Manage Committee Election/Student/StudCandidateProfilePage', functi
     return view('Manage Committee Election/Student/StudCandidateProfilePage');
 });
 
-<<<<<<< Updated upstream
-=======
 Route::get('/Manage Committee Election/Committee/AddCandidatePage', function () {
     return view('Manage Committee Election/Committee/AddCandidatePage');
 });
@@ -126,7 +120,6 @@ Route::get('/Manage Bulletin/editBulletin', function(){
     return view('/Manage Bulletin/editBulletin');
 });
 
->>>>>>> Stashed changes
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
