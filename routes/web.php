@@ -49,8 +49,12 @@ Route::get('/Manage Registration/Student/SearchStudent', function () { //route f
     return view('Manage Registration/Student/SearchStudent');
 });
 
-Route::get('/Manage Registration/Student/viewStudentProfile', function () { //test
-    return view('Manage Registration/Student/viewStudentProfile');
+Route::get('/Manage Registration/Student/studentSearchResult', function () { //test
+    return view('Manage Registration/Student/studentSearchResult');
+});
+
+Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { //test
+    return view('Manage Registration/Lecturer/lecturerSearchResult');
 });
 // end manage register
 

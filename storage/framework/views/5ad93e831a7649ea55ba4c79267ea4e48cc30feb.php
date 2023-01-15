@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Search Profile</title>
+        <title>Profile</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
         </style>
         <link href="/css/style.css" rel="stylesheet">
         <link href="/css/nav.css" rel="stylesheet">
-        <link href="/css/search.css" rel="stylesheet">
+        <link href="/css/pagination.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     </head>
 
@@ -44,59 +44,32 @@
 
         <header class="title">
              <img src="/images/petakom-logo.png" alt="Logo">
-             PROFILE
+            PETAKOM MANAGEMENT SYSTEM
         </header>
         <!-- navigation bar -->
         <div class="wrapper">
             <div class="sidebar">
                 <ul>
-                    <li><a href="/homepage">Dashboard</a></li>
+                    <li><a href="/">Dashboard</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Proposal</a></li>
                     <li><a href="#">Activity</a></li>
-                    <li><a href="#">Committee Election</a></li>
+                    <li><a href="/Manage Committee Election/Student/StudCandidateListPage">Committee Election</a></li>
                     <li><a href="#">Bulletin</a></li>
                 </ul> 
             </div>
             <!-- Container for write anything -->
             <div class="main_content">
-                <div class="top">
-                    <!-- Dashboard > <mark class="red"> Committee Election </mark> -->
-                    Dashboard > Search Profile > <mark class="red"> Lecturer </mark> 
-                </div>                
-                <div class="search-bar">
-                    <div>
-                        <p>Search name</p>
-                    </div>
-                    <input type="text" size="80" placeholder="Search..">
-                    <!-- <button class="button button1">Search</button> -->
-                    <!-- <button class="button button2">Vote</button>
-                    <button class="button button2">Result</button> -->
-                </div>
-                <div class="search-button">
-                    <a href="lecturerSearchResult"><button class="button button1">Search</button></a>
-                </div>
-                <!-- <div class="center">
-                    <div>
-                        Calon Majlis Tertinggi
-                    </div>
-                    <div class="picture">
-                    <img src="/images/candidate/candidate 1.png" alt="candidate 1">
-                    <img src="/images/candidate/candidate 2.png" alt="candidate 2">
-                    <img src="/images/candidate/candidate 3.png" alt="candidate 2">
-                    </div>
-                    <div>
-                    Rubyatun Amirah <br>Binti Hanizam Amin
-                    IK SHIM A/P <br>EH FHOT
-                    MUHAMMAD NURHIDAYAT <br>BIN MOHD TAUFIK
-                    </div>
-                </div> -->
+             
+            <?php echo $__env->yieldContent('content'); ?>   
+            
             </div>
+            
     </body>
             <!-- footer -->
     <footer class="footer">
             © 2022 Petakom Management System, Malaysia
-        </footer>
+    </footer>
 </html>
-<?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Lecturer/SearchLecturer.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/layoutProfile.blade.php ENDPATH**/ ?>
