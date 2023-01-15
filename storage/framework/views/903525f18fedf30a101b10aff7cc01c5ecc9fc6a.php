@@ -1,6 +1,9 @@
   
 
 <?php $__env->startSection('content'); ?>
+<head>
+<title>Committe</title>
+</head>
                 <div class="top">
                     Dashboard > <mark class="red"> Committee Election </mark> 
                 </div>
@@ -42,4 +45,4 @@
                 </div>
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\kiran\OneDrive\Desktop\SE\xampp\htdocs\petakom\petakom\resources\views/Manage Committee Election/Student/StudCandidateListPage.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('/Manage Committee Election/layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\kiran\OneDrive\Desktop\SE\xampp\htdocs\petakom\petakom\resources\views/Manage Committee Election/Student/StudCandidateListPage.blade.php ENDPATH**/ ?>
