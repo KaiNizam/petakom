@@ -20,11 +20,9 @@ Route::get('/homepage', function(){
     return view('homepage');
 });
 
-// Route for Manage Registration
 Route::get('/Manage Registration/RegNewMem', function(){
     return view('Manage Registration/RegNewMem');
 });
-
 Route::get('/Manage Registration/Lecturer/addLecturerProfile', function () {
     return view('Manage Registration/Lecturer/addLecturerProfile');
 });
@@ -58,6 +56,7 @@ Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { /
 });
 // end manage register
 
+// start route manage committe Election
 Route::get('/Manage Committee Election/Student/StudCandidateListPage', function () {
     return view('Manage Committee Election/Student/StudCandidateListPage');
 });
@@ -77,6 +76,19 @@ Route::get('/Manage Committee Election/Committee/CandidateListPage', function ()
 Route::get('/Manage Committee Election/Student/StudCandidateProfilePage', function () {
     return view('Manage Committee Election/Student/StudCandidateProfilePage');
 });
+
+Route::get('/Manage Committee Election/Committee/AddCandidatePage', function () {
+    return view('Manage Committee Election/Committee/AddCandidatePage');
+});
+
+Route::get('/Manage Committee Election/Committee/EditCandidatePage', function () {
+    return view('Manage Committee Election/Committee/EditCandidatePage');
+});
+Route::get('/Manage Committee Election/Committee/CandidateProfilePage', function () {
+    return view('Manage Committee Election/Committee/CandidateProfilePage');
+});
+
+// endroute manage committe Election
 
 //Routes for Manage Activity
 Route::get('/Manage Activity/activityListCommitteePage', function(){

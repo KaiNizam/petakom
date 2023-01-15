@@ -67,10 +67,10 @@
                 <div class="search">
                     <input type="text" placeholder="Search..">
                     <button class="button button1">Search</button>
-                    <a href="ElectionResultPage">
+                    <a href="/ElectionResultPage">
                         <button class="button button2">Result</button>
                     </a>>
-                    <a href="VotingPage">
+                    <a href="AddCandidatePage">
                         <button class="button button2">Add +</button>
                     </a>
                 </div>
@@ -80,15 +80,22 @@
                     </div>
                     <div class="item">
                         <img class ="candidate" src="/images/candidate/candidate 1.png" alt="candidate 1"/>
+                        <a href="CandidateProfilePage">
                         <span class="caption">Rubyatun Amirah <br>Binti Hanizam Amin</span>
+                        </a>
+                        <a href="EditCandidatePage">
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
+                        </a>
                     </div>
                     <div class="item">
                         <img class ="candidate" src="/images/candidate/candidate 2.png" alt="candidate 2">
                         <span class="caption">Ik Shim A/P<br>Eh Fhot</span>
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
                     </div>
                     <div class="item">
                         <img class ="candidate" src="/images/candidate/candidate 3.png" alt="candidate 2">
                         <span class="caption">Muhammad Nurhidayat<br>Bin Mohd Taufik</span>
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
                     </div>
                     <div class="pagination">
                         <a href="#">&laquo;</a>

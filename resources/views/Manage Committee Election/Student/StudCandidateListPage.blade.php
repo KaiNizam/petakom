@@ -1,6 +1,9 @@
-@extends('layout')  
+@extends('/Manage Committee Election/layout')  
 
 @section('content')
+<head>
+<title>Committe</title>
+</head>
                 <div class="top">
                     Dashboard > <mark class="red"> Committee Election </mark> 
                 </div>

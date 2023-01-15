@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Petakom Management System</title>
+        <title>Committee Election</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
         <link href="/css/style.css" rel="stylesheet">
         <link href="/css/nav.css" rel="stylesheet">
         <link href="/css/pagination.css" rel="stylesheet">
+        <link href="/css/profile.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     </head>
 
