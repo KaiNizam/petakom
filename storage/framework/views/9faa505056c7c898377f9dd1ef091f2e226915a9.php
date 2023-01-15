@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\kiran\OneDrive\Desktop\SE\petakom-management-system\resources\views/a.blade.php ENDPATH**/ ?>

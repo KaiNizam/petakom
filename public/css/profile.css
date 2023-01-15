@@ -1,0 +1,45 @@
+div.item1 {
+  vertical-align: top;
+  display: inline-block;
+  width: 350px;
+  background: white;
+  font-size: 30px;
+}
+
+.candidatefull{
+  width: 180px;
+  height: 270px;
+}
+
+.profileleft {
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.profileright {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.input input{
+  width: 60%;
+  height: 20px;
+  background: lightgray;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;  
+  box-shadow: 1px 1px 1px #999;
+}
+
+.pic{
+  width: 100px;
+  height: 100px;
+}
