@@ -4,7 +4,7 @@
     display: inline-block;
     margin: 46px; /* space between buttons */
     /* margin-left: 50px; */
-    margin-top: 100px;
+    margin-top: 250px;
     background: rgb(206, 3, 12); /* background color */
     color: rgb(255, 255, 255); /* text color */
     font-size: 1.5em;
@@ -35,7 +35,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 img {
