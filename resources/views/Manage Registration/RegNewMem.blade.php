@@ -27,16 +27,24 @@
                 </ul> 
             </div>
             <!-- div to add content modules -->
-            <div class="main_content"> 
+            <div class="main_content">
+                <div class="top">
+                    Dashboard > <mark class="red"> Registration </mark> 
+                </div>
                 <!-- buttons to add member -->
                 <div class="home-container">
                     <a class="my-button" title="Relevant Title" href="Lecturer/addLecturerProfile">New Faculty Lecturer</a>
                     <a class="my-button" title="Relevant Title" href="Student/addStudentProfile">New Student</a>
                 </div>
+                <div id="bottom">
+                    <!-- <a href="">Search Profile</a> -->
+                    <p><b><a class="scrh-prof" href="SearchProfileOption">Search Profile</a></b></p>
+                </div>
             </div>
         </div>
-
+        <footer class="footer">
+            © 2022 Petakom Management System, Malaysia
+        </footer>
         
-
     </body>
 </html>

@@ -77,8 +77,8 @@
                 </div>
             </div>
         </div>
-
-        
-
+        <footer class="footer">
+            © 2022 Petakom Management System, Malaysia
+        </footer>
     </body>
 </html>

@@ -46,6 +46,14 @@ Route::get('/Manage Registration/Lecturer/SearchLecturer', function () { //route
 Route::get('/Manage Registration/Student/SearchStudent', function () { //route for search student page
     return view('Manage Registration/Student/SearchStudent');
 });
+
+Route::get('/Manage Registration/Student/studentSearchResult', function () { //test
+    return view('Manage Registration/Student/studentSearchResult');
+});
+
+Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { //test
+    return view('Manage Registration/Lecturer/lecturerSearchResult');
+});
 // end manage register
 
 // start route manage committe Election

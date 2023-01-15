@@ -1,0 +1,250 @@
+.searchInput{    
+    height:30px;
+    width: 300px;
+    padding-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    color: green;
+    min-width: 50px;
+    text-align: center;
+}
+
+.searchbtn {
+    background-color: rgb(206, 3, 12);
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 6px;
+    cursor: pointer;
+  }
+
+  .addbtn{
+    background-color: rgb(206, 3, 12);
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 20px;
+    margin-left: 440px;
+    cursor: pointer;
+  }
+
+  .style-table{
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 1030px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .style-table thead tr{
+    background-color: #d9d9d9;
+    color: black;
+    text-align: left;
+  }
+
+  .style-table th,
+  .style-table td{
+    padding: 12px 15px;
+  }
+
+  .style-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+  }
+
+  .list-content{
+    margin: 25px;
+  }
+
+  .list-form-content{
+    margin: 25px;
+    background-color: white;
+  }
+
+  .title-body{
+    border-bottom: 1px solid #dddddd;
+    background: transparent;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  .title-body h2{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .add-form{
+    padding: 25px;
+  }
+
+  .add-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+  }
+
+  .dropdown-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+  }
+
+  .dropdown{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+  }
+
+  .left-input{
+    width: 45%;
+    margin-left: auto;
+    display: inline-block;
+  }
+
+  .right-input{
+    width: 45%;
+    margin-right: auto;
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .right-input p{
+    width: 100%;
+    text-align: center;
+    line-height: 220px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid black;
+    border-style: dashed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .right-input input{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    margin-top: -100px;
+  }
+
+  .right-input button{
+    margin: 0;
+    color: #fff;
+    background: rgb(206, 3, 12);
+    border: none;
+    width: 435px;
+    height: 35px;
+    border-bottom: 4px solid white;
+    transition: all .2s ease;
+    outline: none;
+  }
+
+  .right-input button:hover{
+    cursor: pointer;
+  }
+
+  .right-input button:active{
+    border:0;
+  }
+
+  .addbtn1{
+    background-color: rgb(206, 3, 12);
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .updatebtn{
+    background-color: rgb(206, 3, 12);
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .cancelbtn{
+    background-color: white;
+    border: 1px solid rgb(206, 3, 12);
+    color: rgb(206, 3, 12);
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 710px;
+    cursor: pointer;
+  }
+
+  .view-list-content{
+    background-color: white;
+    margin: 25px;
+  }
+
+  .style-view-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 1020px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }

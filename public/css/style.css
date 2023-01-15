@@ -30,6 +30,14 @@ body{
     margin-right: 10px;
  }
 
+ /* button hover */
+ .button1:hover{
+   background: rgb(36, 32, 32);
+   color: #d7e1e1;
+   transition: all 0.2s;
+   cursor: pointer;
+ }
+
  .search input[type=text] {
    padding: 6px;
    margin-top: 8px;

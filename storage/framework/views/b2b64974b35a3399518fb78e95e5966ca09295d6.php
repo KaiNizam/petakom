@@ -19,9 +19,8 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <link href="/css/homepage.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
-        <link href="/css/nav.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     </head>
 
     <body class="antialiased">
@@ -33,9 +32,9 @@
                     <?php else: ?>
                         <a href="<?php echo e(route('login')); ?>" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-                        <!-- <?php if(Route::has('register')): ?>
+                        <?php if(Route::has('register')): ?>
                             <a href="<?php echo e(route('register')); ?>" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        <?php endif; ?> -->
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -43,7 +42,7 @@
 
         <header class="title">
              <img src="/images/petakom-logo.png" alt="Logo"/>
-            PETAKOM MANAGEMENT SYSTEMs
+            PETAKOM MANAGEMENT SYSTEM
         </header>
         <div class= "home-container">
             <a href="Manage Registration/RegNewMem">
