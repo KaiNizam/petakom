@@ -10,7 +10,7 @@
                 <div class="search">
                     <input type="text" placeholder="Search..">
                     <button class="button button1">Search</button>
-                    <a href="Manage Committee Election/ElectionResultPage">
+                    <a href="/Manage Committee Election/ElectionResultPage">
                         <button class="button button2">Result</button>
                     </a>>
                     <a href="VotingPage">
@@ -24,7 +24,7 @@
                     <div class="item">
                         <img class ="candidate" src="/images/candidate/candidate 1.png" alt="candidate 1"/>
                         <a href="StudCandidateProfilePage">
-                            <span class="caption">Rubyatun Amirah <br>Binti Hanizam Amin</span>
+                            <span class="caption">{{}}</span>
                         </a>
                     </div>
                     <div class="item">
