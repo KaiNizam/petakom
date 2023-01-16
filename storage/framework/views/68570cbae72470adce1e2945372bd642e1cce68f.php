@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Search Profile</title>
+        <title>Committee</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
         </style>
         <link href="/css/style.css" rel="stylesheet">
         <link href="/css/nav.css" rel="stylesheet">
-        <link href="/css/search.css" rel="stylesheet">
+        <link href="/css/pagination.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     </head>
 
     <body class="antialiased">
-        <!-- <div>
+        <div>
             <?php if(Route::has('login')): ?>
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     <?php if(auth()->guard()->check()): ?>
@@ -40,63 +40,78 @@
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
-        </div> -->
+        </div>
 
         <header class="title">
              <img src="/images/petakom-logo.png" alt="Logo">
-             PROFILE
+            PETAKOM MANAGEMENT SYSTEM
         </header>
         <!-- navigation bar -->
         <div class="wrapper">
             <div class="sidebar">
                 <ul>
-                    <li><a href="/homepage">Dashboard</a></li>
+                    <li><a href="/">Dashboard</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Proposal</a></li>
                     <li><a href="#">Activity</a></li>
-                    <li><a href="#">Committee Election</a></li>
+                    <li><a href="/Manage Committee Election/Student/StudCandidateListPage">Committee Election</a></li>
                     <li><a href="#">Bulletin</a></li>
                 </ul> 
             </div>
             <!-- Container for write anything -->
             <div class="main_content">
                 <div class="top">
-                    <!-- Dashboard > <mark class="red"> Committee Election </mark> -->
-                    Dashboard > Search Profile > <mark class="red"> Student </mark> 
-                </div>                
-                <div class="search-bar">
-                    <div>
-                        <p>Search name</p>
-                    </div>
-                    <input type="text" size="80" placeholder="Search..">
-                    <!-- <button class="button button1">Search</button> -->
-                    <!-- <button class="button button2">Vote</button>
-                    <button class="button button2">Result</button> -->
+                    Dashboard > <mark class="red"> Committee Election </mark> 
                 </div>
-                <div class="search-button">
-                    <a href="viewStudentProfile"><button class="button button1">Search</button></a>
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button class="button button1">Search</button>
+                    <a href="/ElectionResultPage">
+                        <button class="button button2">Result</button>
+                    </a>>
+                    <a href="AddCandidatePage">
+                        <button class="button button2">Add +</button>
+                    </a>
                 </div>
-                <!-- <div class="center">
-                    <div>
+                <div class="center">
+                    <div >
                         Calon Majlis Tertinggi
                     </div>
-                    <div class="picture">
-                    <img src="/images/candidate/candidate 1.png" alt="candidate 1">
-                    <img src="/images/candidate/candidate 2.png" alt="candidate 2">
-                    <img src="/images/candidate/candidate 3.png" alt="candidate 2">
+                    <div class="item">
+                        <img class ="candidate" src="/images/candidate/candidate 1.png" alt="candidate 1"/>
+                        <a href="CandidateProfilePage">
+                        <span class="caption">Rubyatun Amirah <br>Binti Hanizam Amin</span>
+                        </a>
+                        <a href="EditCandidatePage">
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
+                        </a>
                     </div>
-                    <div>
-                    Rubyatun Amirah <br>Binti Hanizam Amin
-                    IK SHIM A/P <br>EH FHOT
-                    MUHAMMAD NURHIDAYAT <br>BIN MOHD TAUFIK
+                    <div class="item">
+                        <img class ="candidate" src="/images/candidate/candidate 2.png" alt="candidate 2">
+                        <span class="caption">Ik Shim A/P<br>Eh Fhot</span>
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
                     </div>
-                </div> -->
+                    <div class="item">
+                        <img class ="candidate" src="/images/candidate/candidate 3.png" alt="candidate 2">
+                        <span class="caption">Muhammad Nurhidayat<br>Bin Mohd Taufik</span>
+                        <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
+                    </div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                
             </div>
+            
     </body>
             <!-- footer -->
     <footer class="footer">
             © 2022 Petakom Management System, Malaysia
         </footer>
 </html>
-<?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Student/SearchStudent.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Committee Election/Committee/CandidateListPage.blade.php ENDPATH**/ ?>

@@ -71,17 +71,17 @@
                     <h2 class="title-login">Login to your account</h2>
                     <form action="" id="formvalidate">
                     <div class="input-group">
-                        <label class="palceholder" for="userName"></label>
-                        <input class="form-control" name="userName" id="userName" type="text" placeholder="User Name" />
+                        <label class="palceholder" for="userName">User Name</label>
+                        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
                         <span class="lighting"></span>
                     </div>
                     <div class="input-group">
-                        <label class="palceholder" for="userPassword"></label>
-                        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="Password" />
+                        <label class="palceholder" for="userPassword">Password</label>
+                        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" />
                         <span class="lighting"></span>
                     </div>
 
-                    <button type="submit" id="login">Login</button>
+                    <a href="homepage"><button type="submit" id="login">Login</button></a>
                     <div class="clearfix supporter">
                         <div class="pull-left remember-me">
                         <input id="rememberMe" type="checkbox">
@@ -102,7 +102,7 @@
                 </div> -->
                 <!-- partial -->
                 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="/css/script.js"></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="/js/script.js"></script>
         </div>
 
         <footer class="footer">

@@ -1,0 +1,14 @@
+.center-container{
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    background: white;
+    margin-left: 13%;
+    margin-top: 5%;
+    vertical-align: center;
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 125px;
+    padding-bottom: 50px;
+    padding-left: 125px;
+}

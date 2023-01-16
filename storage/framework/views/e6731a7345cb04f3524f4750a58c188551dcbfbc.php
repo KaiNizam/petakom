@@ -3,13 +3,13 @@
 <?php $__env->startSection('content'); ?>
 
     <div class="top">
-                    Dashboard > Student Profile > <mark class="red"> Profile </mark> 
+                    Dashboard > Student Profile > Profile > <mark class="red"> Edit </mark> 
     </div>
     <div class="center-container">
         <div class="item1">
             <div class="profileleft">
 
-                <!-- details container -->
+                <!-- view container -->
                 <div class="form-group">
                     <p>Name</p>
                     <input type="text" class="form-control" id="name" placeholder="Name">
@@ -42,12 +42,12 @@
 
                 <img class ="candidatefull" src="/images/candidate/full 1.png" alt="candidate 1"/>
             </div>
-            <a href="editStudentProfile">
-            <button class="button button1">Edit</button>
+            <a href="viewStudentProfile">
+            <button class="button button1">Cancel</button>
             </a>
-            <button class="button button1">Delete</button>
+            <button class="button button1">Save</button>
         </div>
     </div>
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('/Manage Registration/layoutView', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Student/viewStudentProfile.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('/Manage Registration/layoutView', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Student/editStudentProfile.blade.php ENDPATH**/ ?>

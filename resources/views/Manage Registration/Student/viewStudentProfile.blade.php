@@ -1,6 +1,6 @@
-  
+@extends('/Manage Registration/layoutView')  
 
-<?php $__env->startSection('content'); ?>
+@section('content')
 
     <div class="top">
                     Dashboard > Student Profile > <mark class="red"> Profile </mark> 
@@ -49,5 +49,4 @@
         </div>
     </div>
 
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('/Manage Registration/layoutView', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Student/viewStudentProfile.blade.php ENDPATH**/ ?>
+@endsection

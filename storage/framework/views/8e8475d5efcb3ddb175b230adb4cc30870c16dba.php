@@ -3,7 +3,7 @@
 <?php $__env->startSection('content'); ?>
 
     <div class="top">
-                    Dashboard > Lecturer Profile > <mark class="red"> Profile </mark> 
+                    Dashboard > Lecturer Profile > Profile > <mark class="red"> Edit </mark> 
     </div>
     <div class="center-container">
         <div class="item1">
@@ -38,12 +38,12 @@
 
                 <img class ="candidatefull" src="/images/person.png" alt="candidate 1"/>
             </div>
-            <a href="editLecturerProfile">
-            <button class="button button1">Edit</button>
+            <a href="viewLecturerProfile">
+            <button class="button button1">Cancel</button>
             </a>
-            <button class="button button1">Delete</button>
+            <button class="button button1">Save</button>
         </div>
     </div>
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('/Manage Registration/layoutView', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Lecturer/viewLecturerProfile.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('/Manage Registration/layoutView', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\petakom\resources\views/Manage Registration/Lecturer/editLecturerProfile.blade.php ENDPATH**/ ?>
