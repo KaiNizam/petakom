@@ -125,8 +125,8 @@ a:hover{
 .form-control{
   background-color: #f8f9fa;
   padding: 20px;
-  padding: 10px 200px;
-  margin-bottom: 1.3rem;
+  padding: 5px 200px;
+  margin-bottom: 1.0rem;
 }
 
 .form-control:focus {
@@ -183,7 +183,7 @@ a:hover{
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     /* padding: 2px; */
 }
 /* img {

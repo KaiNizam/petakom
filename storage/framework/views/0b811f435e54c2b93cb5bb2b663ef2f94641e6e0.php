@@ -37,7 +37,12 @@
                             <div class="card">
                                 <h2 class="card-title text-center">Add Student's Detail</h2>
                                 <div class="card-body py-md-4">
-                                    <form _lpchecked="1">
+                                    <form _lpchecked="1" action="<?php echo e(route('studentProfile.store')); ?>" method = "POST" enctype="multipart/form-data">
+                                        <?php echo csrf_field(); ?>
+                                        <div class="form-group">
+                                            <p>Student ID</p>
+                                            <input type="text" class="form-control" id="name" placeholder="Student ID">
+                                        </div>
                                         <div class="form-group">
                                             <p>Name</p>
                                             <input type="text" class="form-control" id="name" placeholder="Name">
@@ -48,7 +53,7 @@
                                         </div>
                                         <div class="form-group">
                                             <p>Phone number</p>
-                                            <input type="int" class="form-control" id="number" placeholder="Phone number">
+                                            <input type="text" class="form-control" id="number" placeholder="Phone number">
                                         </div>
                                         <div class="form-group">
                                             <p>Gender</p>
@@ -61,10 +66,15 @@
                                         <div class="form-group">
                                             <p>Program</p>
                                             <input type="text" class="form-control" id="expertise" placeholder="Program">
-                                        </div>  
+                                        </div>
+                                        <div class="form-group">
+                                            <p>Password</p>
+                                            <input type="text" class="form-control" id="expertise" placeholder="Password">
+                                        </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
                                             <a class="btn btn-cancel" href="#">Cancel</a>
-                                            <a class="btn btn-primary">Add</a>
+                                            <!-- <a class="btn btn-primary">Add</a> -->
+                                            <button type="submit" value="Add Student" class="btn btn-primary">Add</button>
                                         </div>
                                     </form>
                                 </div>

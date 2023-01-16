@@ -39,6 +39,10 @@
                                 <div class="card-body py-md-4">
                                     <form _lpchecked="1">
                                         <div class="form-group">
+                                            <p>Lecturer ID</p>
+                                            <input type="text" class="form-control" id="name" placeholder="Lecturer ID">
+                                        </div>
+                                        <div class="form-group">
                                             <p>Name</p>
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
@@ -57,7 +61,11 @@
                                         <div class="form-group">
                                             <p>Expertise</p>
                                             <input type="text" class="form-control" id="expertise" placeholder="Expertise">
-                                        </div>  
+                                        </div>
+                                        <div class="form-group">
+                                            <p>Password</p>
+                                            <input type="text" class="form-control" id="expertise" placeholder="Password">
+                                        </div>
                                         <div class="d-flex flex-row align-items-center justify-content-between">
                                             <a class="btn btn-cancel" href="#">Cancel</a>
                                             <a class="btn btn-primary">Add</a>

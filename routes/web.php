@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::get('/homepage', function(){
     return view('homepage');
 });
 
+//Route for Manage Registration
 Route::get('/Manage Registration/RegNewMem', function(){
     return view('Manage Registration/RegNewMem');
 });
@@ -31,9 +33,8 @@ Route::get('/Manage Registration/Student/addStudentProfile', function () {
     return view('Manage Registration/Student/addStudentProfile');
 });
 
-Route::get('/Manage Registration/Student/addStudentProfile', function () {
-    return view('Manage Registration/Student/addStudentProfile');
-});
+// Route::get("Manage Registration/Student/addStudentProfile",[UserProfileController::class, 'add']);
+Route::resource('studentProfile', UserProfileController::class);
 
 Route::get('/Manage Registration/SearchProfileOption', function () {
     return view('Manage Registration/SearchProfileOption');
@@ -74,6 +75,11 @@ Route::get('/Manage Registration/Lecturer/viewLecturerProfile', function () {
 Route::get('/Manage Registration/Lecturer/editLecturerProfile', function () { 
     return view('Manage Registration/Lecturer/editLecturerProfile');
 });
+
+//route for insert data
+Route::get('insert','userProfileRecord@insertform');
+Route::post('create','userProfileRecord@insert');
+
 // end manage register
 
 // start route manage committe Election

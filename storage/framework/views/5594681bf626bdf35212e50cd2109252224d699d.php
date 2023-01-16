@@ -23,6 +23,10 @@
                                             <input type="int" class="form-control" id="number" placeholder="Phone number">
                                         </div>
                                         <div class="form-group">
+                                            <p>Gender</p>
+                                            <input type="text" class="form-control" id="office" placeholder="Gender">
+                                        </div>
+                                        <div class="form-group">
                                             <p>Office Location</p>
                                             <input type="text" class="form-control" id="office" placeholder="Office Location">
                                         </div>

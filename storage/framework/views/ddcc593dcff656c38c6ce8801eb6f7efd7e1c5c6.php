@@ -19,9 +19,11 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
-        <link href="/css/homepage.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/loginBar.css">
+        <link href="/css/nav.css" rel="stylesheet">
+        <link href="/css/pms.css" rel="stylesheet">
+        <link href="https://fontawesome.com/" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     </head>
 
     <body class="antialiased">
@@ -31,7 +33,7 @@
                     <?php if(auth()->guard()->check()): ?>
                         <a href="<?php echo e(url('/dashboard')); ?>" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                     <?php else: ?>
-                        <!-- <a href="<?php echo e(route('login')); ?>" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a> -->
+                        <a href="<?php echo e(route('login')); ?>" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
                         <?php if(Route::has('register')): ?>
                             <a href="<?php echo e(route('register')); ?>" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
@@ -39,36 +41,68 @@
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
-            <!-- login link on top right corner -->
-            <div class="login-bar">
-                <a href="Manage Registration/loginPage">login</a> 
-            </div> 
         </div>
 
         <header class="title">
-             <img src="/images/petakom-logo.png" alt="Logo"/>
-            PETAKOM MANAGEMENT SYSTEM
+             <img src="/images/petakom-logo.png" alt="Logo">
+            MANAGE BULLETIN
         </header>
-        <div class= "home-container">
-            <a href="Manage Registration/RegNewMem">
-                <button class="button homepage">REGISTRATION</button>
-            </a>            
-            <button class="button homepage">CALENDAR</button>
-            <button class="button homepage">PROPOSAL</button>
-            <button class="button homepage">ACTIVITY</button>
+        <!-- navigation bar -->
+        <div class="wrapper">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="/homepage">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Proposal</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Committee Election</a></li>
+                    <li><a href="#">Bulletin</a></li>
+                </ul> 
+            </div>
 
-        </div>
-        <div class= "home-container">
-            <a href="Manage Committee Election/Student/StudCandidateListPage">
-                <button class="button homepage">COMMITTEE <br> ELECTION</button>
-            </a>
-            
-            <button class="button homepage">BULLETIN</button>
+            <div class="main_content">
+                <div class="list-form-content">
+                    <form>
+                        <div class="title-body">
+                            <h2>Add New Bulletin</h2>
+                        </div>
 
+                        <div class="add-form">
+                            <div class="left-input">
+                                <label for="ftitle">Title</label>
+                                <input type="text" class="add-input" id="ftitle" name="ftitle" placeholder="Enter title">
+
+                                <label for="fdesc">Description</label>
+                                <textarea class="add-input" id="fdesc" name="fdesc" rows="6" cols="50" placeholder="Enter description"></textarea>
+
+                                <label for="fcategory">Category</label> 
+                                    <select class="dropdown-input">
+                                        <option class="dropdown" value="Select Category">Select Category</option>
+                                        <option class="dropdown" value="Link 1">Link 1</option>
+                                        <option class="dropdown" value="Link 2">Link 2</option>
+                                    </select>
+                            </div>
+
+                            <div class="right-input">
+                                    <label for="fimage" style="margin-bottom: 10px;">Image</label> 
+                                    <input type="file" multiple>
+                                    <p>Drag your files here or click in this area.</p>
+                                    <button type="submit">Upload</button>
+                            </div>
+                        </div>
+
+                        <button class="cancelbtn" id="cancelbtn" name="cancelbtn"><a href='/Manage Bulletin/viewBulletinListCommittee'>Cancel</a></button>
+                        <button class="addbtn1" id="addbtn1" name="addbtn1">Add</button>
+                        
+                            
+                    </form>
+                </div>
+            </div>
         </div>
+
         <footer class="footer">
             © 2022 Petakom Management System, Malaysia
         </footer>
     </body>
-</html>
-<?php /**PATH C:\xampp\htdocs\petakom\resources\views/homepage.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\xampp\htdocs\petakom\resources\views//Manage Bulletin/addBulletin.blade.php ENDPATH**/ ?>
