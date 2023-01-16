@@ -15,8 +15,8 @@ class VotingController extends Controller
      */
     public function index()
     {
-       $VotingRecords = VotingRecord::all();    
-       return view('Manage Committee Election/Committee/CandidateListPage',['VotingRecords'=> $VotingRecords]);
+       $users = VotingRecord::all();    
+       return view('Manage Committee Election.Committee.CandidateListPage.index', compact('users'));
     }
 
     /**

@@ -30,10 +30,10 @@
                     </div>
 
                     <div class="item">
-                    <?php $__currentLoopData = $VotingRecords; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $VotingRecord): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $VotingRecord): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <!-- <img src="<?php echo e(asset('images/candidate/')); ?>"/> -->
                         <a href="CandidateProfilePage">
-                        <?php echo e($VotingRecords->candidate_name); ?>
+                        <?php echo e($users->candidate_name); ?>
 
                         <a href="EditCandidatePage">
                         <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>

@@ -29,10 +29,10 @@
                     </div>
 
                     <div class="item">
-                    @foreach ($VotingRecords as $VotingRecord)
+                    @foreach ($users as $VotingRecord)
                     <!-- <img src="{{ asset('images/candidate/') }}"/> -->
                         <a href="CandidateProfilePage">
-                        {{$VotingRecords->candidate_name}}
+                        {{$users->candidate_name}}
                         <a href="EditCandidatePage">
                         <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
                         </a>
