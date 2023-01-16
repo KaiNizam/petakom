@@ -54,7 +54,7 @@
 
         </div>
         <div class= "home-container">
-            <a href="Manage Committee Election/Student/StudCandidateListPage">
+            <a href="Manage Committee Election/Committee/CandidateListPage">
                 <button class="button homepage">COMMITTEE <br> ELECTION</button>
             </a>
             

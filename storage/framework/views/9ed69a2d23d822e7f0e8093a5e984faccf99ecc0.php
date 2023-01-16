@@ -28,7 +28,7 @@
                     <input type="text" placeholder="Enter Year" name="candidate_year">
                 </div>
                 Manifesto
-                <textarea name="story" placeholder="Enter Manifesto" rows="5" cols="33"></textarea>
+                <textarea name="manifesto" placeholder="Enter Manifesto" rows="5" cols="33"></textarea>
             </div>
         </div>
         <div class="item1">

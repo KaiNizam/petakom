@@ -41,7 +41,8 @@ class VotingController extends Controller
             'candidate_name'        =>  'required',
             'candidate_program'     =>  'required',
             'candidate_year'        =>  'required',
-            'image'                 =>  'required'
+            'image'                 =>  'required',
+            'manifesto'             =>  'required'
         ]);
 
         $file_name = time() . '.' . request()->image->getClientOriginalExtension();

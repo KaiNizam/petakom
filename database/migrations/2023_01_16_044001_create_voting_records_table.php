@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('candidate_name', 255);
             $table->string('candidate_program', 255);
             $table->integer('candidate_year');
-            $table->string('manifesto', 255)->nullable();
+            $table->text('manifesto');
             $table->string('image',255);
             $table->integer('vote_result')->nullable();
             $table->timestamp('deleted_at')->nullable();
