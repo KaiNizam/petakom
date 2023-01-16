@@ -58,6 +58,22 @@ Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () {
 Route::get('/Manage Registration/loginPage', function(){
     return view('Manage Registration/loginPage');
 });
+
+Route::get('/Manage Registration/Student/viewStudentProfile', function () { 
+    return view('Manage Registration/Student/viewStudentProfile');
+});
+
+Route::get('/Manage Registration/Student/editStudentProfile', function () { 
+    return view('Manage Registration/Student/editStudentProfile');
+});
+
+Route::get('/Manage Registration/Lecturer/viewLecturerProfile', function () { 
+    return view('Manage Registration/Lecturer/viewLecturerProfile');
+});
+
+Route::get('/Manage Registration/Lecturer/editLecturerProfile', function () { 
+    return view('Manage Registration/Lecturer/editLecturerProfile');
+});
 // end manage register
 
 // start route manage committe Election

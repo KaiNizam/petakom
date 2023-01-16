@@ -75,7 +75,7 @@
                     <button class="button button2">Result</button> -->
                 </div>
                 <div class="search-button">
-                    <a href="studentSearchResult"><button class="button button1">Search</button></a>
+                    <a href="viewStudentProfile"><button class="button button1">Search</button></a>
                 </div>
                 <!-- <div class="center">
                     <div>
