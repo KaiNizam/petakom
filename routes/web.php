@@ -25,10 +25,6 @@ Route::get('/Manage Registration/RegNewMem', function(){
     return view('Manage Registration/RegNewMem');
 });
 
-Route::get('/Manage Registration/loginPage', function(){
-    return view('Manage Registration/loginPage');
-});
-
 Route::get('/Manage Registration/Lecturer/addLecturerProfile', function () {
     return view('Manage Registration/Lecturer/addLecturerProfile');
 });
@@ -59,6 +55,10 @@ Route::get('/Manage Registration/Student/studentSearchResult', function () {
 
 Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { 
     return view('Manage Registration/Lecturer/lecturerSearchResult');
+});
+
+Route::get('/Manage Registration/loginPage', function(){
+    return view('Manage Registration/loginPage');
 });
 // end manage register
 
