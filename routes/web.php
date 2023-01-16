@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('test','App\Http\Controllers\VotingController');
+
 Route::get('/', function(){ 
     return view('homepage');
 });
@@ -58,6 +58,10 @@ Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { /
 // end manage register
 
 // start route manage committe Election
+Route::resource('test','App\Http\Controllers\VotingController');
+
+Route::resource('/Manage Committee Election/Committee/EditCandidatePage','App\Http\Controllers\VotingController');
+
 Route::get('/Manage Committee Election/Student/StudCandidateListPage', function () {
     return view('Manage Committee Election/Student/StudCandidateListPage',["name"=>"Rubyatun Amirah Binti Hanizam Amin"]);
 });

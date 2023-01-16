@@ -1,14 +1,15 @@
-@extends('/Manage Committee Election/layout')  
+  
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
-@if($message = Session::get('success'))
+<?php if($message = Session::get('success')): ?>
 
 <div class="alert alert-success">
-	{{ $message }}
+	<?php echo e($message); ?>
+
 </div>
 
-@endif
+<?php endif; ?>
 
 <div class="top">
                     Dashboard > <mark class="red"> Committee Election </mark> 
@@ -29,15 +30,16 @@
                     </div>
 
                     <div class="item">
-                    @foreach ($VotingRecords as $VotingRecord)
-                    <!-- <img src="{{ asset('images/candidate/') }}"/> -->
+                    <?php $__currentLoopData = $VotingRecords; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $VotingRecord): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <!-- <img src="<?php echo e(asset('images/candidate/')); ?>"/> -->
                         <a href="CandidateProfilePage">
-                        {{$VotingRecords->candidate_name}}
+                        <?php echo e($VotingRecords->candidate_name); ?>
+
                         <a href="EditCandidatePage">
                         <mark class="edit">Edit</mark>   <mark class="delete">Delete</mark>
                         </a>
                     </div>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     <!-- <div class="item">
                         <img class ="candidate" src="/images/candidate/candidate 2.png" alt="candidate 2">
                         <span class="caption">Ik Shim A/P<br>Eh Fhot</span>
@@ -57,4 +59,5 @@
                     </div>
                 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('/Manage Committee Election/layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\kiran\OneDrive\Desktop\SE\petakom-management-system\petakom\resources\views/Manage Committee Election/Committee/CandidateListPage.blade.php ENDPATH**/ ?>

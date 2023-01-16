@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Http\Controllers\Controller;
 use App\Models\VotingRecord;
 use Illuminate\Http\Request;
@@ -15,7 +15,8 @@ class VotingController extends Controller
      */
     public function index()
     {
-        return "hello ytwfywfduywvydu";
+       $VotingRecords = VotingRecord::all();    
+       return view('Manage Committee Election/Committee/CandidateListPage',['VotingRecords'=> $VotingRecords]);
     }
 
     /**
@@ -25,6 +26,7 @@ class VotingController extends Controller
      */
     public function create()
     {
+        
         return view('AddCandidatePage'); 
     }
 
@@ -47,7 +49,7 @@ class VotingController extends Controller
 
         $file_name = time() . '.' . request()->image->getClientOriginalExtension();
 
-        request()->image->move(public_path('images'), $file_name);
+        request()->image->move(public_path('images\candidate'), $file_name);
 
         $VotingRecord = new VotingRecord();
 
@@ -60,6 +62,8 @@ class VotingController extends Controller
         $VotingRecord->image = $file_name;
 
         $VotingRecord->save();
+
+        return redirect()->route('test.index')->with('success', 'Student Added successfully.');
     }
 
     /**
