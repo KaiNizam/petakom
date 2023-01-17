@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +12,8 @@ use App\Http\Controllers\UserProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function(){
+
+Route::get('/', function(){ 
     return view('homepage');
 });
 
@@ -21,7 +21,6 @@ Route::get('/homepage', function(){
     return view('homepage');
 });
 
-//Route for Manage Registration
 Route::get('/Manage Registration/RegNewMem', function(){
     return view('Manage Registration/RegNewMem');
 });
@@ -33,8 +32,9 @@ Route::get('/Manage Registration/Student/addStudentProfile', function () {
     return view('Manage Registration/Student/addStudentProfile');
 });
 
-// Route::get("Manage Registration/Student/addStudentProfile",[UserProfileController::class, 'add']);
-Route::resource('studentProfile', UserProfileController::class);
+Route::get('/Manage Registration/Student/addStudentProfile', function () {
+    return view('Manage Registration/Student/addStudentProfile');
+});
 
 Route::get('/Manage Registration/SearchProfileOption', function () {
     return view('Manage Registration/SearchProfileOption');
@@ -48,51 +48,30 @@ Route::get('/Manage Registration/Student/SearchStudent', function () { //route f
     return view('Manage Registration/Student/SearchStudent');
 });
 
-Route::get('/Manage Registration/Student/studentSearchResult', function () { 
+Route::get('/Manage Registration/Student/studentSearchResult', function () { //test
     return view('Manage Registration/Student/studentSearchResult');
 });
 
-Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { 
+Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { //test
     return view('Manage Registration/Lecturer/lecturerSearchResult');
 });
-
-Route::get('/Manage Registration/loginPage', function(){
-    return view('Manage Registration/loginPage');
-});
-
-// Route::get('/Manage Registration/Student/viewStudentProfile', function () { 
-//     return view('Manage Registration/Student/viewStudentProfile');
-// });
-
-// Route::get('/Manage Registration/Student/editStudentProfile', function () { 
-//     return view('Manage Registration/Student/editStudentProfile');
-// });
-
-// Route::get('/Manage Registration/Lecturer/viewLecturerProfile', function () { 
-//     return view('Manage Registration/Lecturer/viewLecturerProfile');
-// });
-
-// Route::get('/Manage Registration/Lecturer/editLecturerProfile', function () { 
-//     return view('Manage Registration/Lecturer/editLecturerProfile');
-// });
-
-// //route for insert data
-// Route::get('insert','userProfileRecord@insertform');
-// Route::post('create','userProfileRecord@insert');
-
 // end manage register
 
 // start route manage committe Election
+Route::resource('test','App\Http\Controllers\VotingController');
+
+Route::resource('/Manage Committee Election/Committee/EditCandidatePage','App\Http\Controllers\VotingController');
+
 Route::get('/Manage Committee Election/Student/StudCandidateListPage', function () {
-    return view('Manage Committee Election/Student/StudCandidateListPage');
+    return view('Manage Committee Election/Student/StudCandidateListPage',["name"=>"Rubyatun Amirah Binti Hanizam Amin"]);
 });
 
 Route::get('/Manage Committee Election/Student/VotingPage', function () {
     return view('Manage Committee Election/Student/VotingPage');
 });
 
-Route::get('/ElectionResultPage', function () {
-    return view('ElectionResultPage');
+Route::get('/Manage Committee Election/ElectionResultPagee', function () {
+    return view('/Manage Committee Election/ElectionResultPage');
 });
 
 Route::get('/Manage Committee Election/Committee/CandidateListPage', function () {
