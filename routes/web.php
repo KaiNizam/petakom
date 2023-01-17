@@ -75,7 +75,6 @@ Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { /
 // //route for insert data
 // Route::get('insert','userProfileRecord@insertform');
 // Route::post('create','userProfileRecord@insert');
-
 // end manage register
 
 // start route manage committe Election
