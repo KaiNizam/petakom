@@ -55,6 +55,27 @@ Route::get('/Manage Registration/Student/studentSearchResult', function () { //t
 Route::get('/Manage Registration/Lecturer/lecturerSearchResult', function () { //test
     return view('Manage Registration/Lecturer/lecturerSearchResult');
 });
+
+// Route::get('/Manage Registration/Student/viewStudentProfile', function () { 
+//     return view('Manage Registration/Student/viewStudentProfile');
+// });
+
+// Route::get('/Manage Registration/Student/editStudentProfile', function () { 
+//     return view('Manage Registration/Student/editStudentProfile');
+// });
+
+// Route::get('/Manage Registration/Lecturer/viewLecturerProfile', function () { 
+//     return view('Manage Registration/Lecturer/viewLecturerProfile');
+// });
+
+// Route::get('/Manage Registration/Lecturer/editLecturerProfile', function () { 
+//     return view('Manage Registration/Lecturer/editLecturerProfile');
+// });
+
+// //route for insert data
+// Route::get('insert','userProfileRecord@insertform');
+// Route::post('create','userProfileRecord@insert');
+
 // end manage register
 
 // start route manage committe Election
